@@ -42,6 +42,29 @@ We also added data quality rules to clean up the data when needed, or fail the p
 
 You can see the table dependencies in LSDP_DAG.png.
 
+Code FILE Structure:
+
+CircuitBox_Pipeline
+  - Address (python)
+    
+    - bronze_address.py
+    - silver_address.py
+    - silver_address_clean.py
+      
+  - Customer(SQL)
+    
+    - bronze_customers.sql
+    - silver_customers_clean.sql
+      
+  - Order
+    
+    - bronze_order.py
+    - silver_order.py
+    - silver_order_clean.py
+      
+  - Summary (NOTEBOOK SQL)
+
+    - gold_customer_summary.ipynb
 
 
 
